@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans KR", sans-serif;
+  --font-handwriting: "Nanum Pen Script", "Caveat", cursive;
+  --font-marker: "Permanent Marker", cursive;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.custom-bg {
+  /* ■배경이미지업로드위치■ (아래 url 안에 반복될 이미지 주소를 넣으세요) */
+  background-image: url('https://i.postimg.cc/c1Qm7VWG/lakeo.jpg');
+  background-repeat: repeat;
+  background-color: #f1f5f9; /* 배경 이미지가 투명할 경우 보일 기본 바탕색 */
+}
+
+
+
+.lined-paper {
+  background-image: repeating-linear-gradient(transparent, transparent 31px, #94a3b8 31px, #94a3b8 32px);
+  line-height: 32px;
+  background-attachment: local;
+}
+
+textarea::-webkit-scrollbar {
+  width: 8px;
+}
+textarea::-webkit-scrollbar-track {
+  background: transparent;
+}
+textarea::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 4px;
+}
